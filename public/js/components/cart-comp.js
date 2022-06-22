@@ -80,6 +80,7 @@ Vue.component('cart-vue', {
 `
 });
 
+
 Vue.component('cart-item', {
     props: ['img', 'cart-item'],
     template: `

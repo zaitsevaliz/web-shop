@@ -29,6 +29,7 @@ Vue.component('header-comp', {
     </header>
     `
 });
+
 Vue.component('search-comp', {
     data() {
         return {

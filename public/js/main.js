@@ -73,13 +73,8 @@ const app = new Vue({
 
 
     },
+
     mounted() {
-        // this.getJson(`products.json`)
-        //     .then(data => {
-        //         for (let item of data) {
-        //             this.$data.products.push(item);
-        //             this.$data.filtered.push(item);
-        //         }
-        //     })
+
     }
 });

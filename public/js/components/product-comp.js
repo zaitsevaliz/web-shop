@@ -31,6 +31,7 @@ Vue.component('product-vue', {
                 `
 });
 
+
 Vue.component('product', {
     props: ['product', 'img'],
     template: `
