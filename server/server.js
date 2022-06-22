@@ -8,7 +8,6 @@ app.use(express.json()); // Получение параметров строки
 app.use('/', express.static('public')); //директория с frontend
 app.use('/api/cart', cart);	// пользовательская функция обращения к корзине
 
-
 app.get('/api/products', (req, res) => {
     fs.readFile('server/db/products.json', 'utf-8', (err, data) => {
         if (err) {

@@ -3,7 +3,6 @@ const fs = require('fs');
 const router = express.Router();
 const handler = require('./handler');
 
-
 router.get('/', (req, res) => {
     fs.readFile('server/db/userCart.json', 'utf-8', (err, data) => {
         if (err) {

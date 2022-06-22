@@ -21,7 +21,7 @@ Vue.component('product-vue', {
         },
     },
     template: `  <div class="first-row ">
-				 <product v-for="item of products" 
+				 <product v-for="item of filtered" 
 				 :key="item.id_product"
 				 :img="item.imgProduct"
 				 :product="item"
@@ -30,6 +30,7 @@ Vue.component('product-vue', {
 				</div>
                 `
 });
+
 
 Vue.component('product', {
     props: ['product', 'img'],
