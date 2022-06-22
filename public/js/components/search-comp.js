@@ -1,15 +1,15 @@
 Vue.component('search-comp', {
-    // data() {
-    // 	return {
-    // 		childVal: this.parentVal
-    // 	}
-    // },
+    data() {
+        return {
+            userSearch: ''
+        }
+    },
 
 
     template:
         `
-        <form action="#" @submit.prevent='$parent.filter'>
-        <input type="text"  class="header-search-input" v-model="$parent.userSearch" style="background:transparent; border-right:none; border-top:none; border-left:none; border-color: white;">
+        <form action="#" @submit.prevent='$parent.$refs.products.filter(userSearch)'>
+        <input type="text"  class="header-search-input" v-model="userSearch" style="background:transparent; border-right:none; border-top:none; border-left:none; border-color: white;">
         <button type="submit" class="header-search">
                 <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
                     <path
